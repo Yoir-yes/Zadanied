@@ -16,13 +16,17 @@ class MyForm(QDialog):
         self.ui.ZapiszdoplikuButton.clicked.connect(self.addtofile)
         self.show()
 
+
+
     def getUserdata(self):
+
         imie = self.ui.ImieLine.text()
         naziwsko = self.ui.NazwiskoLine.text()
         pesel = self.ui.PeselLine.text()
         numbertl = self.ui.NumerLine.text()
 
         dane = imie+" "+naziwsko
+        namefile = imie + '_' + naziwsko + ".txt"
 
         if re.match('[0-9]{11}$',pesel):
             self.ui.listWidget.addItem(dane)
@@ -38,7 +42,7 @@ class MyForm(QDialog):
         numbertl = self.ui.NumerLine.text()
 
         dane = imie + " " + naziwsko
-        namefile = imie+'_'+naziwsko+".txt"
+        namefile = imie + '_' + naziwsko + ".txt"
 
         if re.match('[0-9]{11}$', pesel):
             with open(namefile, 'a') as file:
