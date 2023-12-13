@@ -26,7 +26,6 @@ class MyForm(QDialog):
         numbertl = self.ui.NumerLine.text()
 
         dane = imie+" "+naziwsko
-        namefile = imie + '_' + naziwsko + ".txt"
 
         if re.match('[0-9]{11}$',pesel):
             self.ui.listWidget.addItem(dane)
@@ -42,10 +41,9 @@ class MyForm(QDialog):
         numbertl = self.ui.NumerLine.text()
 
         dane = imie + " " + naziwsko
-        namefile = imie + '_' + naziwsko + ".txt"
 
         if re.match('[0-9]{11}$', pesel):
-            with open(namefile, 'a') as file:
+            with open('imie_nazwisko.txt', 'a') as file:
                 file.write(dane + '\n')
         else:
             blad = QMessageBox()
