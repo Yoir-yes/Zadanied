@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCheckBox" name="Umowacheckbox">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>270</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Umowa o pracę</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PeselLine">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>230</y>
+     <width>202</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string comment="99999999999" extracomment="99999999999"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pese">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>220</y>
+     <width>90</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pesel</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NumerLine">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>190</y>
+     <width>202</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string comment="99999999999" extracomment="99999999999"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numer">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>180</y>
+     <width>101</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Numer Telefonu</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NazwiskoLine">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>150</y>
+     <width>202</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nazwisko">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>90</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nazwisko</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ImieLine">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>110</y>
+     <width>202</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imie">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>90</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Imie</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="test">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>500</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>390</y>
+     <width>256</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>330</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="ZapiszButton">
+      <property name="text">
+       <string>Zapisz</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ZapiszdoplikuButton">
+      <property name="text">
+       <string>Zapisz do pliku </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
